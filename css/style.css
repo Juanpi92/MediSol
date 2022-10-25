@@ -29,6 +29,7 @@ body {
 .site-header {
   background-color: var(--third_color);
   padding: 0px;
+  z-index: 1000;
 }
 .site-header .navbar {
   margin: 0px;
