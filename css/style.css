@@ -2,16 +2,18 @@
   --primary_color: #015c39;
   --second_color: #cffcff;
   --third_color: #aaefdf;
+  --third_color_modal: rgb(169, 239, 222, 0.7);
 }
 body {
   background: linear-gradient(rgb(207, 252, 255, 0.8), rgb(207, 252, 255, 0.9));
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 .navbar-nav .nav-item {
   margin: 0px 10px;
+  padding: 10px;
+  font-weight: bold;
+  color: black;
 }
 .site-header {
   background-color: var(--third_color);
@@ -24,31 +26,49 @@ body {
 .navbar .navbar-toggler {
   border: 2px solid var(--primary_color);
 }
-.navbar .nav-item {
-  margin: 0px;
-  padding: 0px;
-  font-weight: bold;
-}
+
 .nav-item .nav-link {
   padding: 15px;
 }
-.navbar-nav .nav-item .nav-link.active {
-  border-bottom: 2px solid var(--primary_color);
+.nav-link.active {
+  border-bottom: 4px solid var(--primary_color);
   color: var(--primary_color);
 }
 .navbar-nav .nav-item .nav-link {
-  color: black;
+  color: inherit;
 }
 
 .navbar .nav-item:hover,
-.nav-item .nav-link.active:hover,
-.navbar .nav-item a:hover {
+.nav-item .nav-link.active:hover {
   background-color: var(--primary_color);
   color: #fff;
+}
+
+.ultima {
+  background-color: var(--third_color_modal);
+  color: var(--primary_color);
+}
+.ultima2 {
+  background-color: var(--third_color);
+}
+footer .btn:hover {
+  background-color: var(--primary_color);
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.copy {
+  text-align: center;
 }
 
 @media (min-width: 992px) {
   .site-header .navbar {
     padding: 0px;
+  }
+  .contenedor {
+    flex-direction: row;
   }
 }
