@@ -4,10 +4,21 @@
   --third_color: #aaefdf;
   --third_color_modal: rgb(169, 239, 222, 0.7);
 }
+html {
+  height: 100vh;
+  min-height: 100vh;
+}
 body {
   background: linear-gradient(rgb(207, 252, 255, 0.8), rgb(207, 252, 255, 0.9));
   background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .navbar-nav .nav-item {
   margin: 0px 10px;
@@ -30,38 +41,60 @@ body {
 .nav-item .nav-link {
   padding: 15px;
 }
-.nav-link.active {
+.nav-item.active > a {
   border-bottom: 4px solid var(--primary_color);
   color: var(--primary_color);
 }
+
 .navbar-nav .nav-item .nav-link {
   color: inherit;
 }
 
-.navbar .nav-item:hover,
-.nav-item .nav-link.active:hover {
+.navbar .nav-item:hover {
   background-color: var(--primary_color);
   color: #fff;
 }
+footer {
+  width: 100vw;
+  align-self: flex-end;
+  color: black;
+}
 
-.ultima {
-  background-color: var(--third_color_modal);
-  color: var(--primary_color);
+footer .btn {
+  border: 2px solid var(--primary_color);
 }
-.ultima2 {
-  background-color: var(--third_color);
-}
+
 footer .btn:hover {
   background-color: var(--primary_color);
 }
 .contenedor {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
 }
-.copy {
+.contenedor div {
+  width: 50vh;
+  margin: 0px auto;
+}
+
+.ultima {
+  background-color: var(--third_color_modal);
+  padding: 10px;
+}
+
+.ultima2 {
+  background-color: var(--third_color);
   text-align: center;
+  padding: 15px 0px;
+}
+.descripcion {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0px;
+  padding-left: 10%;
+}
+.contacto {
+  padding-top: 10px;
 }
 
 @media (min-width: 992px) {
@@ -70,5 +103,10 @@ footer .btn:hover {
   }
   .contenedor {
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contacto {
+    padding-top: 0px;
   }
 }
