@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
   --primary_color: #015c39;
   --second_color: #cffcff;
@@ -9,7 +10,7 @@ html {
   min-height: 100vh;
 }
 body {
-  background: linear-gradient(rgb(207, 252, 255, 0.8), rgb(207, 252, 255, 0.9));
+  background: linear-gradient(rgb(207, 252, 255, 0.8), rgb(207, 252, 255, 0.9)), url("../img/telemedicina.png");
   height: 100vh;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -18,8 +19,14 @@ body {
   background-attachment: fixed;
 }
 main {
-  margin-top: 60px;
+  margin-top: 70px;
 }
+
+.navbar .navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
 .navbar-nav .nav-item {
   margin: 0px 10px;
   padding: 10px;
@@ -65,6 +72,9 @@ main {
 .navbar .dropdown.active_drop {
   display: block;
 }
+.login.out {
+  display: none;
+}
 
 .navbar .dropdown {
   display: none;
@@ -87,8 +97,7 @@ main {
 footer {
   width: 100vw;
   color: black;
-  position: relative;
-  bottom: 0px;
+  position: sticky;
 }
 
 footer .btn {
@@ -119,6 +128,7 @@ footer .btn:hover {
   background-color: var(--third_color);
   text-align: center;
   padding: 15px 0px;
+  border-top: 3px solid rgba(1, 92, 57, 0.814);
 }
 .descripcion {
   font-size: 1.2rem;
