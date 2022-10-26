@@ -10,15 +10,15 @@ html {
 }
 body {
   background: linear-gradient(rgb(207, 252, 255, 0.8), rgb(207, 252, 255, 0.9));
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100vh;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  margin-top: 100px;
 }
 .navbar-nav .nav-item {
   margin: 0px 10px;
@@ -27,14 +27,21 @@ body {
   color: black;
 }
 .site-header {
+  position: fixed;
+  top: 0px;
   background-color: var(--third_color);
   padding: 0px;
-  z-index: 1000;
+  z-index: 900;
+  width: 100vw;
 }
 .site-header .navbar {
   margin: 0px;
-  padding: 10px;
 }
+
+.site-header .navbar.active_drop {
+  padding: 10px 40px 10px 10px !important;
+}
+
 .navbar .navbar-toggler {
   border: 2px solid var(--primary_color);
 }
@@ -55,10 +62,33 @@ body {
   background-color: var(--primary_color);
   color: #fff;
 }
+.navbar .dropdown.active_drop {
+  display: block;
+}
+
+.navbar .dropdown {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 4px 0px;
+}
+.dropdown .dropdown-menu {
+  background-color: var(--third_color);
+  font-weight: bold;
+  color: black;
+}
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: var(--primary_color);
+  color: #fff;
+}
+
 footer {
   width: 100vw;
-  align-self: flex-end;
   color: black;
+  position: fixed;
+  bottom: 0px;
 }
 
 footer .btn {
@@ -81,6 +111,9 @@ footer .btn:hover {
   background-color: var(--third_color_modal);
   padding: 10px;
 }
+.ultima p {
+  margin-bottom: 2px;
+}
 
 .ultima2 {
   background-color: var(--third_color);
@@ -95,12 +128,12 @@ footer .btn:hover {
   padding-left: 10%;
 }
 .contacto {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 @media (min-width: 992px) {
   .site-header .navbar {
-    padding: 0px;
+    padding: 0px 10px 0px 10px !important;
   }
   .contenedor {
     flex-direction: row;
@@ -109,5 +142,8 @@ footer .btn:hover {
   }
   .contacto {
     padding-top: 0px;
+  }
+  .navbar .dropdown {
+    padding: 10px 0px;
   }
 }
