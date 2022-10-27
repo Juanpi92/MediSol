@@ -79,12 +79,7 @@ main {
 .navbar .dropdown.active_drop {
   display: block;
 }
-.login {
-  cursor: pointer;
-}
-.login > * {
-  pointer-events: none;
-}
+
 .login.out {
   display: none;
 }
