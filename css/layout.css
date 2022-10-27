@@ -31,7 +31,7 @@ main {
 
 .navbar .navbar-brand {
   font-family: "Metal Mania";
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .navbar-nav .nav-item {
@@ -61,7 +61,8 @@ main {
 }
 
 .nav-item .nav-link {
-  padding: 15px;
+  padding: 10px;
+  font-size: 1.4rem;
 }
 .nav-item.active > a {
   border-bottom: 4px solid var(--primary_color);
@@ -78,6 +79,12 @@ main {
 }
 .navbar .dropdown.active_drop {
   display: block;
+}
+.login{
+  cursor: pointer;
+}
+.login>*{
+pointer-events: none
 }
 
 .login.out {
@@ -146,6 +153,12 @@ footer .btn:hover {
 }
 .contacto {
   padding-top: 20px;
+}
+#exampleModal.show_modal{
+  padding-top:200px;
+  display: block;
+  opacity: 1;
+  transition: all 2s ease;
 }
 
 @media (min-width: 992px) {
