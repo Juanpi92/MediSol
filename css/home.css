@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;1,200;1,500;1,600&display=swap");
+
+.info {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+.info .imagen {
+  display: none;
+  width: 80%;
+  max-width: 950px;
+  margin: 5px auto;
+}
+.imagen img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.info .texto {
+  width: 90%;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.texto a {
+  text-decoration: none;
+}
+.duvidas {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+.duvidas .accordion-item {
+  background: rgba(255, 255, 255, 0.703);
+  margin: 2px auto;
+}
+.duvidas .accordion-button {
+  background-color: var(--third_color_modal);
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #283779;
+}
+@media (min-width: 480px) {
+  .info .imagen {
+    display: block;
+  }
+}

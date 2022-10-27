@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
 :root {
   --primary_color: #015c39;
   --second_color: #cffcff;
@@ -30,7 +30,7 @@ main {
 }
 
 .navbar .navbar-brand {
-  font-family: "Poppins", sans-serif;
+  font-family: "Metal Mania";
   font-size: 2rem;
 }
 
