@@ -27,21 +27,21 @@ const Revisar_Usuario = async (user, password) => {
   } catch (error) {
     let error_message = error.statusText || "Ocurrio un error";
     $error_login.innerHTML = `${error_message}:${error.status}`;
+    return null;
   }
   return devolver;
 };
 
 const Actualizar_Sesion = () => {
-  const usuario = JSON.parse(localStorage.user_medisol);
-  if (usuario) {
-    //Hay una sesion abierta
+  try {
+    const usuario = JSON.parse(localStorage.user_medisol);
     $login_item.classList.add("out");
     $cadastro_item.classList.add("out");
     $sesion_item.classList.add("active_drop");
     $navbar.classList.add("active_drop");
     $navbar_toogler.classList.add("active_drop");
     $usuario.innerHTML = `${usuario.name}`;
-  } else {
+  } catch (error) {
     $login_item.classList.remove("out");
     $cadastro_item.classList.remove("out");
     $sesion_item.classList.remove("active_drop");
@@ -74,7 +74,7 @@ document.addEventListener("submit", async (event) => {
     if (coincide) {
       //Aqui con la sesion abierta;
       window.location.replace("../index.html");
-    } else {
+    } else if (coincide === false) {
       $error_login.innerHTML = "Usuario ou Senha Incorretos";
     }
   }
