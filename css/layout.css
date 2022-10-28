@@ -92,6 +92,18 @@ main {
 .login > * {
   pointer-events: none;
 }
+.login_no{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between; 
+}
+.loader{
+  text-align: center;
+  display: none;
+}
+.loader.show{
+  display: block;
+}
 
 .cadastro.out,
 .login.out {
@@ -186,6 +198,8 @@ footer .btn:hover {
 }
 .error_login {
   color: red;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @media (min-width: 992px) {

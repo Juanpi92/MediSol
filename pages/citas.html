@@ -20,63 +20,125 @@
     />
   </head>
   <body>
-    <header class="site-header">
-      <!--NavBar-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand">Medisol</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicos.html">Serviços</a>
-              </li>
-              <li class="nav-item cadastro">
-                <a class="nav-link" href="cadastro.html">Cadastro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="fale.html">Fale Conosco</a>
-              </li>
-              <li class="nav-item login">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-            </ul>
+        <!--Modal login-->
+        <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form id="form_login">
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Usuario:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="recipient-name" name="user" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                    required  placeholder="Digite email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Senha</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="recipient-password" name="password" placeholder="Digite a Senha"
+                    required
+                  />
+                </div>
+              <div class="login_no"><a href="senha.html">Esqueci minha senha</a> <a href="cadastro.html">Cadastrarse</a></div>
+            </div>
+            <div class="loader"><img src="../asset/loader_oval.svg" alt="loading"></div>
+            <div class="modal-footer">
+              <input
+                type="submit"
+                class="btn btn-primary"
+                id="#login_submit"
+                value="Entrar"
+              />
+            </div>
+            </form>
           </div>
         </div>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-            <li><a class="dropdown-item" href="#">Conferir Citas</a></li>
+      </div>
+  <!--Modal End-->
+  <header class="site-header">
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand">Medisol</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item cadastro">
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fale.html">Fale Conosco</a>
+            </li>
+            <li class="nav-item login">
+              <a class="nav-link">Login</a>
+            </li>
           </ul>
-        </li>
-      </nav>
-    </header>
+        </div>
+      </div>
+      <!--Dropdown sesion-->
+      <li class="nav-item dropdown sesion">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><p class="usuario">Nombre</p></li>
+          <li class="logout"><a class="dropdown-item"><i class="fa-solid fa-power-off"></i> Logout</a></li>
+          <li><a class="dropdown-item" href="citas.html">Conferir Citas</a></li>
+        </ul>
+      </li>
+      <!--Dropdown sesion End-->
+    </nav>
+  </header>
     <main>
       <!--Aqui o codigo de cada integrante  -->
     </main>
@@ -130,7 +192,7 @@
       </div>
       <div class="ultima2">© 2022 Copyright: FrontEnders</div>
     </footer>
-
+    <script src="../js/medisol.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

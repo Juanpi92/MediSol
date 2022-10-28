@@ -9,6 +9,7 @@ const $sesion_item = document.querySelector(".sesion");
 const $navbar = document.querySelector(".navbar");
 const $usuario = document.querySelector(".usuario");
 const $navbar_toogler = document.querySelector(".navbar-toggler");
+const $loader = document.querySelector(".loader");
 /*Funciones*/
 const Revisar_Usuario = async (user, password) => {
   let devolver = false;
@@ -25,6 +26,7 @@ const Revisar_Usuario = async (user, password) => {
       }
     });
   } catch (error) {
+    $loader.classList.remove("show");
     let error_message = error.statusText || "Ocurrio un error";
     $error_login.innerHTML = `${error_message}:${error.status}`;
     return null;
@@ -56,6 +58,8 @@ document.addEventListener("click", (event) => {
   }
   if (event.target.matches(".btn-close")) {
     $modal.classList.remove("show_modal");
+    $form_login.reset();
+    $error_login.innerHTML = "";
   }
   if (event.target.matches(".logout")) {
     let confirmar = confirm("Esta seguro de sair da sesão");
@@ -68,6 +72,7 @@ document.addEventListener("click", (event) => {
 document.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (event.target.matches("#form_login")) {
+$loader.classList.add("show");
     const user = event.target.user.value;
     const password = event.target.password.value;
     let coincide = await Revisar_Usuario(user, password);
@@ -75,10 +80,12 @@ document.addEventListener("submit", async (event) => {
       //Aqui con la sesion abierta;
       window.location.replace("../index.html");
     } else if (coincide === false) {
+      $loader.classList.remove("show");
       $error_login.innerHTML = "Usuario ou Senha Incorretos";
     }
   }
 });
 document.addEventListener("DOMContentLoaded", () => {
+  $form_login.reset();
   Actualizar_Sesion();
 });
