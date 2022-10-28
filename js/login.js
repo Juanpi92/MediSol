@@ -9,6 +9,22 @@ const $form_login = document.getElementById("form_login");
 $form_login.insertAdjacentHTML("afterend", `<p class="error_login"></p>`);
 const $error_login = document.querySelector(".error_login");
 
+export function Login(event) {
+  $loader.classList.add("show");
+  setTimeout(async () => {
+    const user = event.target.user.value;
+    const password = event.target.password.value;
+    let coincide = await Revisar_Usuario(user, password);
+    if (coincide) {
+      //Aqui con la sesion abierta;
+      window.location.replace("../index.html");
+    } else if (coincide === false) {
+      $loader.classList.remove("show");
+      $error_login.innerHTML = "Usuario ou Senha Incorretos";
+    }
+  }, 300);
+}
+
 export async function Revisar_Usuario(user, password) {
   let devolver = false;
   try {
