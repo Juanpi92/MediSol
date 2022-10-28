@@ -21,32 +21,63 @@
   </head>
   <body>
     <!--Modal login-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Usuario:</label>
-                  <input type="text" class="form-control" id="recipient-name">
-                </div>
-                <div class="mb-3">
-                    <label for="recipient-name" class="col-form-label">Password</label>
-                    <input type="password" class="form-control" id="recipient-password">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">Entrar</button>
-            </div>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="modal-body">
+            <form id="form_login">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Usuario:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="recipient-name" name="user" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                  required  placeholder="Digite email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Senha</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="recipient-password" name="password" placeholder="Digite a Senha"
+                  required
+                />
+              </div>
+            <div><a href="pages/senha.html">Esqueci minha senha</a></div>
+          </div>
+          <div class="modal-footer">
+            <input
+              type="submit"
+              class="btn btn-primary"
+              id="#login_submit"
+              value="Entrar"
+            />
+          </div>
+          </form>
         </div>
       </div>
-
+    </div>
+<!--Modal End-->
     <header class="site-header">
       <!--NavBar-->
       <nav class="navbar navbar-expand-lg">
@@ -88,7 +119,8 @@
             </ul>
           </div>
         </div>
-        <li class="nav-item dropdown">
+        <!--Dropdown sesion-->
+        <li class="nav-item dropdown sesion">
           <a
             class="nav-link dropdown-toggle"
             href="#"
@@ -98,10 +130,12 @@
           >
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Logout</a></li>
-            <li><a class="dropdown-item" href="#">Conferir Citas</a></li>
+            <li><p class="usuario">Nombre</p></li>
+            <li class="logout"><a class="dropdown-item"><i class="fa-solid fa-power-off"></i> Logout</a></li>
+            <li><a class="dropdown-item" href="pages/citas.html">Conferir Citas</a></li>
           </ul>
         </li>
+        <!--Dropdown sesion End-->
       </nav>
     </header>
     <main>
@@ -238,7 +272,8 @@
                 data-bs-target="#collapseFour"
                 aria-expanded="false"
                 aria-controls="collapseFour"
-              >Posso falar com o médico após terminada a Teleconsulta?
+              >
+                Posso falar com o médico após terminada a Teleconsulta?
               </button>
             </h2>
             <div
@@ -248,9 +283,11 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>É possível entrar em contato com a equipe imediatamente após
+                <strong
+                  >É possível entrar em contato com a equipe imediatamente após
                   a Teleconsulta ter finalizado. Nós notificaremos o seu médico,
-                  que entrará em contato com você o mais breve possível.</strong>
+                  que entrará em contato com você o mais breve possível.</strong
+                >
               </div>
             </div>
           </div>
@@ -263,7 +300,8 @@
                 data-bs-target="#collapseFive"
                 aria-expanded="false"
                 aria-controls="collapseFive"
-              >Posso pagar após a realização da Teleconsulta?
+              >
+                Posso pagar após a realização da Teleconsulta?
               </button>
             </h2>
             <div
@@ -273,7 +311,10 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>Sim, pode ser pago tanto antes como depois da consulta.</strong>
+                <strong
+                  >Sim, pode ser pago tanto antes como depois da
+                  consulta.</strong
+                >
               </div>
             </div>
           </div>
@@ -286,7 +327,8 @@
                 data-bs-target="#collapseSix"
                 aria-expanded="false"
                 aria-controls="collapseSix"
-              >Quanto tempo após da Teleconsulta recebo a prescrição médica?
+              >
+                Quanto tempo após da Teleconsulta recebo a prescrição médica?
               </button>
             </h2>
             <div
@@ -296,7 +338,11 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>Você receberá sua prescrição médica (que inclui: receitas médicas, atestados médicos e requisição de exames) por email em até 24 horas após a consulta.</strong>
+                <strong
+                  >Você receberá sua prescrição médica (que inclui: receitas
+                  médicas, atestados médicos e requisição de exames) por email
+                  em até 24 horas após a consulta.</strong
+                >
               </div>
             </div>
           </div>
@@ -309,7 +355,8 @@
                 data-bs-target="#collapseSeven"
                 aria-expanded="false"
                 aria-controls="collapseSeven"
-              >O que fazer caso eu não receba a prescrição médica?
+              >
+                O que fazer caso eu não receba a prescrição médica?
               </button>
             </h2>
             <div
@@ -319,7 +366,13 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>Basta entrar em contato diretamente com a nossa equipe via WhatsApp, que informará ao médico que houve algum problema no envio dos documentos. O médico reenviará no mesmo dia a sua prescrição, após corrigir algum erro nos dados digitados (como por exemplo, no email enviado).</strong>
+                <strong
+                  >Basta entrar em contato diretamente com a nossa equipe via
+                  WhatsApp, que informará ao médico que houve algum problema no
+                  envio dos documentos. O médico reenviará no mesmo dia a sua
+                  prescrição, após corrigir algum erro nos dados digitados (como
+                  por exemplo, no email enviado).</strong
+                >
               </div>
             </div>
           </div>
@@ -332,7 +385,8 @@
                 data-bs-target="#collapseEigth"
                 aria-expanded="false"
                 aria-controls="collapseEigth"
-              >Como faço para cancelar a Teleconsulta que já agendei?
+              >
+                Como faço para cancelar a Teleconsulta que já agendei?
               </button>
             </h2>
             <div
@@ -342,7 +396,10 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>É necessário entrar em contato pelo nosso WhatsApp: +5521970657890</strong>
+                <strong
+                  >É necessário entrar em contato pelo nosso WhatsApp:
+                  +5521970657890</strong
+                >
               </div>
             </div>
           </div>
@@ -355,7 +412,8 @@
                 data-bs-target="#collapseNine"
                 aria-expanded="false"
                 aria-controls="collapseNine"
-              >Preciso ter algum documento em mãos na hora do atendimento?
+              >
+                Preciso ter algum documento em mãos na hora do atendimento?
               </button>
             </h2>
             <div
@@ -365,12 +423,20 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>É muito importante ter em mãos na hora da Teleconsulta, documentos atualizados como: receitas médicas de medicamentos de uso contínuo atuais, laudos médicos, atestados médicos, últimos exames realizados, notas de altas hospitalares ou notas de atendimentos ambulatoriais. Estes documentos disponíveis na hora da Teleconsulta facilitam muito a comunicação entre o médico e o paciente.</strong>
+                <strong
+                  >É muito importante ter em mãos na hora da Teleconsulta,
+                  documentos atualizados como: receitas médicas de medicamentos
+                  de uso contínuo atuais, laudos médicos, atestados médicos,
+                  últimos exames realizados, notas de altas hospitalares ou
+                  notas de atendimentos ambulatoriais. Estes documentos
+                  disponíveis na hora da Teleconsulta facilitam muito a
+                  comunicação entre o médico e o paciente.</strong
+                >
               </div>
             </div>
           </div>
         </div>
-        </div>
+      </div>
       <!--Aqui o codigo de cada integrante  -->
     </main>
     <footer class="">
