@@ -7,6 +7,7 @@
     <title>MediSol</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/servicos.css">
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -140,7 +141,80 @@
     </nav>
   </header>
     <main>
-      <!--Aqui o codigo de cada integrante  -->
+      <section class="sec" id="intro"> <!--Introdução-->
+        <div class="text">
+          <h1 id="txtH1">Consulte com médicos especializados através de Videochamadas.</h1>
+          <p id="txtI">Para escolher um médico basta clica no botão abaixo e agendar sua consulta.</p>
+          <a class="btn btn-primary" href="#medicos" role="button">Escolha o seu médico</a>
+        </div>
+          <img src="../img/telemedicina3.jpg" alt="Telemedicina" id="imgInicial">
+      </section>
+
+      <section class="sec" id="descricao"> <!--Descrição-->
+        <div class="posiçãoD">
+          <img src="../img/Médicos.png" alt="" class="imgDesc">
+          <div class="containerDesc">
+            <h3 id="txtH5">Consultas com Médicos Especializados</h3>
+            <p class="txtD">Escolha entre especialistas nas áreas de oncologia, dermatologista, ortopedista.</p>
+          </div>
+        </div>
+
+        <div class="posiçãoD">
+          <img src="../img/Consulta.png" alt="" class="imgDesc">
+          <div class="containerDesc">
+            <h3 id="txtH5">Atendemos Durante os 7 Dias da Semana</h3>
+            <p class="txtD">Agende suas consultas para qualquer dia da semana sem se preocupar, inclusive nos feriados. <br>Sua teleconsulta estará disponível para você no mesmo dia ou em até 24 horas.
+            </p>
+          </div>
+        </div>
+
+        <div class="posiçãoD">
+          <img src="../img/Prescrição.png" alt="" class="imgDesc">
+          <div class="containerDesc">
+            <h3 id="txtH5">Prescrição Médica por Email</h3>
+            <p class="txtD">Após sua consulta enviaremos sua prescrição para o seu email de cadastro, logo após sua consulta.</p>
+          </div>
+        </div>
+
+        <div class="posiçãoD">
+          <img src="../img/Nacional.png" alt="" class="imgDesc">
+          <div class="containerDesc">
+            <h3 id="txtH5">Teleconsultas em Todo o Brasil</h3>
+            <p class="txtD">Agendamento online e fácil, teleconsultas com até 30 minutos de duração .Atendemos todas as regiões do Brasil, em qualquer horário do dia.</p>
+          </div>
+        </div> <!--Fim da Descrição-->
+      </section>
+
+      <section class="sec" id="medicos"> <!--Escolha Entre os Médicos-->
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Médico Especialista em Oncologia</h3>
+              <p class="card-text">Marque um agendamento com o Doutor Kauan Oliveira Cardoso, responsável pelas consultas na área de oncologia.</p>
+              <p>Valor: R$200,00</p>
+              <a class="btn btn-primary" href="#">Agende sua Consulta</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Médico Especialista em Dermatologia</h3>
+              <p class="card-text">Marque um agendamento com a Doutora Alice Oliveira Silva, responsável pelas consultas na área de dermatologia.</p>
+              <p>Valor: R$180,00</p>
+              <a class="btn btn-primary" href="#">Agende sua Consulta</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Médico Especialista em Ortopedia</h3>
+              <p class="card-text">Marque um agendamento com a Doutora Nicole Alves Goncalves, responsável pelas consultas na área de ortopedia.</p>
+              <p>Valor: R$160,00</p>
+              <a class="btn btn-primary" href="#">Agende sua Consulta</a>
+            </div>
+          </div>
+        </div>
+      </section> <!--Fim da Esccolha-->
     </main>
 
     <footer class="">
