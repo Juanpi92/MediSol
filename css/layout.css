@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
 :root {
   --primary_color: #015c39;
   --second_color: #cffcff;
@@ -30,8 +30,8 @@ main {
 }
 
 .navbar .navbar-brand {
-  font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-family: "Metal Mania";
+  font-size: 2.2rem;
 }
 
 .navbar-nav .nav-item {
@@ -53,15 +53,21 @@ main {
 }
 
 .site-header .navbar.active_drop {
-  padding: 10px 40px 10px 10px !important;
+  /*active sesion*/
+  padding: 0px 10px !important;
+  margin-right: 10px;
 }
 
 .navbar .navbar-toggler {
   border: 2px solid var(--primary_color);
 }
+.navbar .navbar-toggler.active_drop {
+  margin-right: 20px;
+}
 
 .nav-item .nav-link {
-  padding: 15px;
+  padding: 10px;
+  font-size: 1.4rem;
 }
 .nav-item.active > a {
   border-bottom: 4px solid var(--primary_color);
@@ -76,7 +82,8 @@ main {
   background-color: var(--primary_color);
   color: #fff;
 }
-.navbar .dropdown.active_drop {
+.navbar .dropdown.sesion.active_drop {
+  /*para Mostrar el Boton de logueado*/
   display: block;
 }
 .login {
@@ -85,8 +92,36 @@ main {
 .login > * {
   pointer-events: none;
 }
-.login.out {
+.login_no {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.loader {
+  text-align: center;
   display: none;
+}
+.loader.show {
+  display: block;
+}
+
+.cadastro.out,
+.login.out {
+  /*Ocultar Cadastro y login*/
+  display: none;
+}
+.logout {
+  cursor: pointer;
+}
+.logout > * {
+  pointer-events: none;
+}
+.usuario {
+  text-align: center;
+  border-bottom: 2px solid var(--primary_color);
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 1.2rem;
 }
 
 .navbar .dropdown {
@@ -104,9 +139,12 @@ main {
 }
 .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: var(--primary_color);
-  color: #fff;
+  color: #fff !important;
 }
-
+.dropdown .dropdown-menu li:hover > .dropdown-item {
+  background-color: var(--primary_color);
+  color: #fff !important;
+}
 footer {
   width: 100vw;
   color: black;
@@ -151,6 +189,16 @@ footer .btn:hover {
 }
 .contacto {
   padding-top: 20px;
+}
+#exampleModal.show_modal {
+  padding-top: 200px;
+  display: block;
+  opacity: 1;
+}
+.error_login {
+  color: red;
+  padding-top: 10px;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
