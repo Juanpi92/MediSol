@@ -201,6 +201,16 @@ footer .btn:hover {
   padding-top: 10px;
   text-align: center;
 }
+.title {
+  color: #283779;
+  font-family: "Nunito", Sans-serif;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1.5rem;
+  padding-left: 40px;
+  margin: 20px 0px 10px 0px;
+}
 
 @media (min-width: 992px) {
   .site-header .navbar {

@@ -7,6 +7,7 @@
     <title>MediSol</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/citas.css">
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -140,6 +141,30 @@
     </nav>
   </header>
     <main>
+      <section class="tabla_citas table-responsive">
+        <div class="title">Citas Solicitadas</div>
+<table class="table table-info table-striped table-hover ">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Doutor</th>
+      <th scope="col">Consulta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!--Aqui el cuerpo de la tabla-->
+  </tbody>
+</table>
+    <template id="tabla_template">
+       <tr>
+      <th scope="row" class="indice"></th>
+      <td class="name"></td>
+      <td class="doctor"></td>
+      <td class="consulta"></td>
+    </tr>
+    </template>
+      </section>
       <!--Aqui o codigo de cada integrante  -->
     </main>
 
@@ -193,6 +218,7 @@
       <div class="ultima2">© 2022 Copyright: FrontEnders</div>
     </footer>
     <script src="../js/medisol.js" type="module"></script>
+    <script src="../js/citas.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"

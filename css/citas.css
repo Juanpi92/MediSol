@@ -1,0 +1,12 @@
+.tabla_citas {
+  margin: 0px 10px;
+}
+.table {
+}
+
+@media (min-width: 1200px) {
+  .tabla_citas {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
