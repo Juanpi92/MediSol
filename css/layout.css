@@ -148,6 +148,7 @@ main {
 footer {
   width: 100vw;
   color: black;
+  margin-top: 20px;
 }
 
 footer .btn {

@@ -40,7 +40,6 @@ export async function Revisar_Usuario(user, password) {
       }
     });
   } catch (error) {
-    console.log("error");
     $loader.classList.remove("show");
     let error_message = error.statusText || "Ocurrio un error";
 

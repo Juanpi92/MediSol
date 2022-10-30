@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap");
 
 .info {
   margin: 10px auto;
@@ -29,7 +29,6 @@
 .duvidas {
   width: 90%;
   margin: 0px auto;
-  margin-bottom: 20px;
 }
 .duvidas .accordion-item {
   background: rgba(255, 255, 255, 0.703);
@@ -53,5 +52,4 @@
   margin: 20px 0px 10px 0px;
 }
 @media (min-width: 480px) {
- 
 }
