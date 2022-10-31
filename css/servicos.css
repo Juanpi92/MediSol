@@ -44,3 +44,39 @@ p {
   position: relative;
   width: 600px;
 }
+
+@media (max-width:600px) {
+  #txtI, #txtH1 {
+  width: 350px;
+  margin-bottom: 20px;
+  }
+
+  .sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #imgInicial {
+    display: none;
+  }
+
+  .posiçãoD {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .imgDesc {
+    width: 200px;
+  }
+
+  .containerDesc {
+    position: relative;
+    width: 350px;
+  }
+}
