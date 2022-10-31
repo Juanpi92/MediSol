@@ -60,21 +60,9 @@
   "lista_espera": [
     {
       "name": "Juan Pablo Urgelles",
-      "doctor": "Doutora Nicole Alves Goncalves",
-      "consulta": "Ortopedia",
-      "id": 1
-    },
-    {
-      "name": "Juan Pablo Urgelles",
       "doctor": "Doutora Alice Oliveira Silva",
       "consulta": "Dermatologia",
-      "id": 2
-    },
-    {
-      "name": "Juan Pablo Urgelles",
-      "doctor": "Doutor Kauan Oliveira Cardoso",
-      "consulta": "Oncologia",
-      "id": 3
+      "id": 1
     }
   ]
 }

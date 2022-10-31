@@ -1,3 +1,5 @@
+import { cita } from "../models/clases.js";
+
 const Agregar_Lista = async (doctor, consulta, usuario) => {
   let url = "http://localhost:5555/lista_espera";
   //Creo las opciones, pues es un envio
@@ -26,10 +28,17 @@ const Agregar_Lista = async (doctor, consulta, usuario) => {
 };
 
 const Crear_Cita = (event) => {
-  const doctor = event.target.dataset.doctor;
+  /*const doctor = event.target.dataset.doctor;
   const consulta = event.target.dataset.consulta;
-  const usuario = JSON.parse(localStorage.user_medisol).name;
-  Agregar_Lista(doctor, consulta, usuario);
+  const usuario = JSON.parse(localStorage.user_medisol).name;*/
+  //Aqui crear la clase citas
+  let new_cita = new cita(
+    event.target.dataset.doctor,
+    event.target.dataset.consulta,
+    JSON.parse(localStorage.user_medisol).name
+  );
+
+  Agregar_Lista(new_cita.doctor, new_cita.consulta, new_cita.usuario);
 };
 
 document.addEventListener("click", (event) => {

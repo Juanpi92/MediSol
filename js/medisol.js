@@ -17,7 +17,7 @@ document.addEventListener("click", (event) => {
     let confirmar = confirm("Esta seguro de sair da sesão");
     if (confirmar) {
       localStorage.removeItem("user_medisol");
-      location.reload();
+      window.location.replace("../index.html");
     }
   }
 });
