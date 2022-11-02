@@ -57,7 +57,7 @@ export function Actualizar_Sesion() {
     $sesion_item.classList.add("active_drop");
     $navbar.classList.add("active_drop");
     $navbar_toogler.classList.add("active_drop");
-    $usuario.innerHTML = `${usuario.name}`;
+    $usuario.innerHTML = `${usuario.username}`;
   } catch (error) {
     $login_item.classList.remove("out");
     $cadastro_item.classList.remove("out");

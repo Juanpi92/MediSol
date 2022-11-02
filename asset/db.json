@@ -1,60 +1,23 @@
 {
   "user": [
     {
-      "id": 1,
       "name": "Juan Pablo Urgelles",
-      "username": "Juanpi92",
+      "username": "Juanpi2022",
       "email": "juan.urgelles92@gmail.com",
-      "password": "Juanpi92",
+      "password": "Juanpi22",
+      "phone": "+55210657460",
+      "cpf": "066.481.017-92",
+      "gender": "homen",
       "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874"
+        "cep": "20271-120",
+        "rua": "Avenida Paula Sousa",
+        "numero": "90",
+        "complemento": "apto 24",
+        "estado": "RJ",
+        "bairro": "Maracanã",
+        "cidade": "Rio de Janeiro"
       },
-      "phone": "1-770-736-8031 x56442"
-    },
-    {
-      "id": 2,
-      "name": "Lucas Lopes",
-      "username": "lacmlopes",
-      "password": "Lucas",
-      "email": "lacmlopes@id.uff.br",
-      "address": {
-        "street": "Victor Plains",
-        "suite": "Suite 879",
-        "city": "Wisokyburgh",
-        "zipcode": "90566-7771"
-      },
-      "phone": "010-692-6593 x09125"
-    },
-    {
-      "id": 3,
-      "name": "Gustavo Resende",
-      "username": "Naufra1",
-      "email": "gustavoresende3e@gmail.com",
-      "password": "Gustavo",
-      "address": {
-        "street": "Douglas Extension",
-        "suite": "Suite 847",
-        "city": "McKenziehaven",
-        "zipcode": "59590-4157"
-      },
-      "phone": "1-463-123-4447"
-    },
-    {
-      "id": 4,
-      "name": "Jorge Neto",
-      "username": "Jorge",
-      "email": "jorge.neto@gmail.com",
-      "password": "Jorge",
-      "address": {
-        "street": "Hoeger Mall",
-        "suite": "Apt. 692",
-        "city": "South Elvis",
-        "zipcode": "53919-4257"
-      },
-      "phone": "493-170-9623 x156"
+      "id": 1
     }
   ],
   "lista_espera": [
@@ -63,6 +26,12 @@
       "doctor": "Doutora Alice Oliveira Silva",
       "consulta": "Dermatologia",
       "id": 1
+    },
+    {
+      "name": "Juan Pablo Urgelles",
+      "doctor": "Doutor Kauan Oliveira Cardoso",
+      "consulta": "Oncologia",
+      "id": 2
     }
   ]
 }

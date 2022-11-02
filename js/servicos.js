@@ -28,9 +28,6 @@ const Agregar_Lista = async (doctor, consulta, usuario) => {
 };
 
 const Crear_Cita = (event) => {
-  /*const doctor = event.target.dataset.doctor;
-  const consulta = event.target.dataset.consulta;
-  const usuario = JSON.parse(localStorage.user_medisol).name;*/
   //Aqui crear la clase citas
   let new_cita = new cita(
     event.target.dataset.doctor,

@@ -196,11 +196,7 @@ footer .btn:hover {
   display: block;
   opacity: 1;
 }
-.error_login {
-  color: red;
-  padding-top: 10px;
-  text-align: center;
-}
+
 .title {
   color: #283779;
   font-family: "Nunito", Sans-serif;
@@ -210,6 +206,12 @@ footer .btn:hover {
   line-height: 1.5rem;
   padding-left: 40px;
   margin: 20px 0px 10px 0px;
+}
+.botones {
+  background: linear-gradient(135deg, blue, blue) !important;
+}
+.botones:hover {
+  background: linear-gradient(-135deg, blue, white) !important;
 }
 
 @media (min-width: 992px) {
