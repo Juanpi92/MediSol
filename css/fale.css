@@ -1,0 +1,20 @@
+.container {
+  margin: 20px auto;
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container img {
+  margin: 20px auto;
+  max-width: 90%;
+  border-radius: 50%;
+  border: 10px solid #50b68fc5;
+}
+
+.integrantes {
+  text-align: center;
+}

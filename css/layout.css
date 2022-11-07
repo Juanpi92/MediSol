@@ -97,6 +97,10 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+.error_login {
+  color: red;
+}
+
 .loader {
   text-align: center;
   display: none;

@@ -1,0 +1,164 @@
+body {
+    margin:  0px;
+    background-color: #ca2d2d;
+}
+
+
+
+.chat {
+    position: fixed;
+    bottom: 0px;
+    right:  60px;
+    margin:  auto;  
+    border: 1px solid #50b68fc5;
+    z-index: 5;
+    color: black;
+    background-color: #aaefdf;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+#chat {
+    height: 500px;
+    display: none;
+    animation-name: fadein;
+    animation-duration: 1s;
+    display: none;
+    font-size: 0.9em;
+}
+#chat-fechado {
+    height: 40px; 
+    display: none;
+}
+
+
+#input{
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    width: 235px;
+    right: 10px;
+    
+
+}
+#submit {
+    position: absolute;
+    bottom: 10px;
+    padding: 10px;
+    right: 10px;
+    width: 30px;
+    height:  45px;
+    border-radius: 0px auto auto 0px;
+
+
+}
+
+
+
+
+#fechar  {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+   
+    
+}
+#abrir {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+  
+
+
+}
+
+
+.abr-fec {
+        position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 1.2em;
+    font-weight: 200;
+    height: 30px;
+    border: none;
+    background-color:  #aaefdf;
+}
+
+
+
+.linha {
+    display:  inline-block;
+    background-color: black;
+    clear:  both;
+    width: 300px;
+}
+
+
+#msgs {
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-margin: 0px;
+    height: 350px;
+    width: 280px;
+    margin-top: 10px;
+    margin-right: 20px;
+    float: left;
+}
+.msgs {
+    position: relative;
+    margin-left: 50px; 
+
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 10px 10px 5px;
+    white-space: pre-line;
+    width:  200px;
+    background-color: #cffcff;
+    list-style: none;
+    word-wrap:  break-word;
+}
+
+#lista-msgs {
+    position: relative;
+}
+.listaELement {
+    position: relative;
+    bottom: 10px;
+    
+    display:  inline-block;
+    margin-top: 10px;
+    width:  300px;
+    height: 100%;
+}
+
+    
+.icone {
+    position: relative;
+    left: 0px;
+    top:  20px;
+    border-radius: 100px;
+    width:  40px;
+    height: auto;
+}
+
+#icone {
+    height: auto;
+    width:  35px;
+    position:  absolute;
+    left: 10px;
+    bottom:  15px;
+}
+@keyframes fadein {
+0% { transform:  translateY(500px);
+} 
+50% { transform: translateY(445px);
+}
+80% { transform: translatey(445px);
+}
+100% { transform: translateY(0px);
+}
+}
+h2 {
+    font-size: 20%;
+}
