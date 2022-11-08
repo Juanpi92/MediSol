@@ -56,6 +56,7 @@ btn.addEventListener('click', function (e) {
     lista.innerHTML += '<div class="listaELement"><img src="img/icone.jpg" class="icone"><div class="msgs">' + input.value + '</div></div>';
     setTimeout(julietteFalas, 1000);
     mensagens += input.value;
+        input.value = "";
     }
     //localStorage.setItem("msgs", mensagens);
     
