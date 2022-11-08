@@ -14,7 +14,7 @@ const chatFechado = document.getElementById("chat-fechado");
 
 function aparecerdiv() {
     chat.style.display = 'block';
-    lista.innerHTML += '<div class="listaELement"><img src="img/juliette.webp" class="icone"><li class="msgs">Olá! Em que posso ajudá-lo?</li></div>';
+    lista.innerHTML += '<div class="listaELement"><img src="img/veronica.jpg" class="icone"><li class="msgs">Olá! Em que posso ajudá-lo?</li></div>';
 }
 
 fechar.addEventListener ("click", 
@@ -77,6 +77,6 @@ btn.addEventListener('click', function (e) {
 setTimeout(alertarMsgs, 50000);
 
 function julietteFalas () {
-    lista.innerHTML += '<div class="listaELement"><img src="img/juliette.webp" class="icone"><li class="msgs">Não entendo ainda o que diz :(</li></div>';
+    lista.innerHTML += '<div class="listaELement"><img src="img/veronica.jpg" class="icone"><li class="msgs">Não entendo ainda o que diz :(</li></div>';
 }
 
