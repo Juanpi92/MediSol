@@ -18,6 +18,25 @@
         "cidade": "Rio de Janeiro"
       },
       "id": 1
+    },
+    {
+      "name": "Arai Padilla",
+      "username": "Arai",
+      "email": "arai@gmail.com",
+      "password": "Arai22",
+      "phone": "+55210657461",
+      "cpf": "044.481.017-92",
+      "gender": "mulher",
+      "address": {
+        "cep": "20271-120",
+        "rua": "Avenida Paula Sousa",
+        "numero": "85",
+        "complemento": "apto 10",
+        "estado": "RJ",
+        "bairro": "Maracanã",
+        "cidade": "Rio de Janeiro"
+      },
+      "id": 2
     }
   ],
   "lista_espera": [
@@ -32,6 +51,18 @@
       "doctor": "Doutor Kauan Oliveira Cardoso",
       "consulta": "Oncologia",
       "id": 2
+    },
+    {
+      "name": "Arai Padilla",
+      "doctor": "Doutora Alice Oliveira Silva",
+      "consulta": "Dermatologia",
+      "id": 3
+    },
+    {
+      "name": "Arai Padilla",
+      "doctor": "Doutora Nicole Alves Goncalves",
+      "consulta": "Ortopedia",
+      "id": 4
     }
   ]
 }
