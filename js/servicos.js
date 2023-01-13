@@ -1,7 +1,7 @@
 import { cita } from "../models/clases.js";
 
 const Agregar_Lista = async (doctor, consulta, usuario) => {
-  let url = "http://localhost:5555/lista_espera";
+  let url = "https://medisol-api.onrender.com/lista_espera";
   //Creo las opciones, pues es un envio
   let options = {
     method: "POST",

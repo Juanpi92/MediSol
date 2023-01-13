@@ -3,7 +3,9 @@ const Actualizar_Citas = async () => {
   const $template = document.getElementById("tabla_template").content;
   const $fragmento = document.createDocumentFragment();
   try {
-    let respuesta = await fetch("http://localhost:5555/lista_espera");
+    let respuesta = await fetch(
+      "https://medisol-api.onrender.com/lista_espera"
+    );
     if (!respuesta.ok) {
       throw { statusText: respuesta.statusText, status: respuesta.status };
     }

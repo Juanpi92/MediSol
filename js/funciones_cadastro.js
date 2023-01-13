@@ -17,7 +17,7 @@ export async function Buscar_CEP(cep) {
 }
 
 export async function Insertar_Usuario(new_usuario) {
-  let url = "http://localhost:5555/user";
+  let url = "https://medisol-api.onrender.com/user";
   //Creo las opciones, pues es un envio
   let options = {
     method: "POST",

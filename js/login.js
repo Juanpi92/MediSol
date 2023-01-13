@@ -28,7 +28,7 @@ export function Login(event) {
 export async function Revisar_Usuario(user, password) {
   let devolver = false;
   try {
-    let respuesta = await fetch("http://localhost:5555/user");
+    let respuesta = await fetch("https://medisol-api.onrender.com/user");
     if (!respuesta.ok) {
       throw { statusText: respuesta.statusText, status: respuesta.status };
     }
